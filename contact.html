@@ -1,44 +1,79 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>Contact - Coffee Shop Guide of a TUPian</title>
+    <title>Contact TUPian CoffeeBuddy Guide</title>
 </head>
-
 <body>
 
-    <header>
-        <h1>Budget Coffee Shop Around TUP Manila</h1>
+```
+<header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Contact TUPian CoffeeBuddy Guide</h1>
 
-    <main>
+    <p>Your guide to discovering coffee shops around TUP Manila</p>
 
-        <section>
-            <h2>Contact Me</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <h2>Contact Us</h2>
+
+    <p>Have a suggestion, found an incorrect detail, or want to ask a question? We'd love to hear from you!</p>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Your details</legend>
 
             <p>
-                Have a coffee shop recommendation or want to share your experience?
-                Feel free to contact me.
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required>
             </p>
 
-            <ul>
-                <li>Email: zedrickjamesfernandez@gmail.com</li>
-                <li>Facebook: Zedrick James Fernandez</li>
-            </ul>
-        </section>
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
 
-    </main>
+            <p>
+                <label for="subject">Subject</label><br>
+                <select id="subject" name="subject">
+                    <option value="suggest-place">Suggest a place</option>
+                    <option value="correct-detail">Correct a detail</option>
+                    <option value="ask-question">Ask a question</option>
+                    <option value="something-else">Something else</option>
+                </select>
+            </p>
 
-    <footer>
-        <p>&copy; 2026 Zedrick James Fernandez</p>
-    </footer>
+            <p>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" required></textarea>
+            </p>
+
+            <button type="submit">Send message</button>
+
+        </fieldset>
+
+    </form>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 TUPian CoffeeBuddy Guide. All rights reserved.</p>
+
+</footer>
+```
 
 </body>
 </html>
