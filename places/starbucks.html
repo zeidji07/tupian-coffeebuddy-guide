@@ -1,79 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks | TUPian Coffee Guide</title>
-
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 50%;
-        }
-
-        th, td {
-            border: 1px solid #8a5f41;
-            padding: 3px;
-        }
-    </style>
+    <title>Starbucks - TUPian CoffeeBuddy Guide</title>
 </head>
-
 <body>
 
     <header>
-        <h1>TUPian Coffee Guide</h1>
-        <p><i>Discover the best coffee shops around TUP Manila.</i></p>
+
+        <h1>Starbucks</h1>
+
+        <p>Your guide to coffee shops and places around TUP.</p>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Coffee Shop Description -->
     <main>
 
-        <article>
+        <h2>Starbucks</h2>
 
-            <h1>Starbucks</h1>
+        <p>
+            Starbucks is a popular place for coffee, studying, and
+            spending time with friends.
+        </p>
 
-            <img src="../images/starbucks.jpg"
-                 alt="Starbucks coffee shop with its signature green logo and cozy interior"
-                 width="400" height="400">
+        <h2>Suggest a Place</h2>
 
-            <br>
+        <p>
+            Know a great place around TUP that should be included
+            in our guide? Let us know!
+        </p>
+
+        <form>
 
             <p>
-                Starbucks is one of my top recommendations for TUP students because it provides a comfortable and relaxing environment that's perfect for studying, completing assignments, or simply taking a break after classes. The café offers a wide selection of handcrafted coffee, refreshing beverages, and delicious pastries that suit different tastes. Its spacious seating, air-conditioned interior, reliable Wi-Fi, and convenient charging outlets make it an excellent place for both individual study sessions and group discussions. Whether you want to enjoy your favorite coffee, prepare for exams, or spend quality time with friends, Starbucks offers a welcoming atmosphere that makes every visit worthwhile.
+                <label for="place-name">Place Name</label><br>
+                <input type="text" id="place-name" name="place-name" required>
             </p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Location</th>
-                        <th>Opening Hours</th>
-                        <th>Price Range</th>
-                        <th>Best Time To Visit</th>
-                    </tr>
-                </thead>
+            <fieldset>
 
-                <tbody>
-                    <tr>
-                        <td>Starbucks - UN Square, Ermita, Manila</td>
-                        <td>7:00 AM – 10:00 PM</td>
-                        <td>₱150 – ₱300</td>
-                        <td>The best time to visit this coffee shop is 2:00 - 4:00 since the peak hours of people visiting the said coffee show is few compared to rush hours.</td>
-                    </tr>
-                </tbody>
-            </table>
+                <legend>Category</legend>
 
-        </article>
+                <p>
+                    <input type="radio" id="food" name="category" value="food">
+                    <label for="food">Food</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="study" name="category" value="study">
+                    <label for="study">Study Spot</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="outdoors" name="category" value="outdoors">
+                    <label for="outdoors">Outdoors</label>
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>What's good about it?</legend>
+
+                <p>
+                    <input type="checkbox" id="affordable" name="good-points" value="affordable">
+                    <label for="affordable">Affordable</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="wifi" name="good-points" value="wifi">
+                    <label for="wifi">Good Wi-Fi</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="quiet" name="good-points" value="quiet">
+                    <label for="quiet">Quiet</label>
+                </p>
+
+            </fieldset>
+
+            <p>
+                <label for="email">Contact Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <button type="submit">Suggest place</button>
+            </p>
+
+        </form>
 
     </main>
+
+    <footer>
+
+        <p>&copy; 2026 TUPian CoffeeBuddy Guide. All rights reserved.</p>
+
+    </footer>
 
 </body>
 </html>
