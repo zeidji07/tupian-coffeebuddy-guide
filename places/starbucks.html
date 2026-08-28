@@ -1,109 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Starbucks - TUPian CoffeeBuddy Guide</title>
-</head>
-<body>
+<main>
 
-    <header>
+    <h2>Starbucks</h2>
 
-        <h1>Starbucks</h1>
+    <img src="../images/starbucks.jpg" alt="Starbucks">
 
-        <p>Your guide to coffee shops and places around TUP.</p>
+    <p>
+        Starbucks is a popular place for coffee, studying, and
+        spending time with friends.
+    </p>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <h2>Suggest a Place</h2>
 
-    </header>
+    <p>
+        Know a great place around TUP that should be included
+        in our guide? Let us know!
+    </p>
 
-    <main>
-
-        <h2>Starbucks</h2>
+    <form>
 
         <p>
-            Starbucks is a popular place for coffee, studying, and
-            spending time with friends.
+            <label for="place-name">Place Name</label><br>
+            <input type="text" id="place-name" name="place-name" required>
         </p>
 
-        <h2>Suggest a Place</h2>
+        <fieldset>
+
+            <legend>Category</legend>
+
+            <p>
+                <input type="radio" id="food" name="category" value="food">
+                <label for="food">Food</label>
+            </p>
+
+            <p>
+                <input type="radio" id="study" name="category" value="study">
+                <label for="study">Study Spot</label>
+            </p>
+
+            <p>
+                <input type="radio" id="outdoors" name="category" value="outdoors">
+                <label for="outdoors">Outdoors</label>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>What's good about it?</legend>
+
+            <p>
+                <input type="checkbox" id="affordable" name="good-points" value="affordable">
+                <label for="affordable">Affordable</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="wifi" name="good-points" value="wifi">
+                <label for="wifi">Good Wi-Fi</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="quiet" name="good-points" value="quiet">
+                <label for="quiet">Quiet</label>
+            </p>
+
+        </fieldset>
 
         <p>
-            Know a great place around TUP that should be included
-            in our guide? Let us know!
+            <label for="email">Contact Email</label><br>
+            <input type="email" id="email" name="email" required>
         </p>
 
-        <form>
+        <p>
+            <button type="submit">Suggest place</button>
+        </p>
 
-            <p>
-                <label for="place-name">Place Name</label><br>
-                <input type="text" id="place-name" name="place-name" required>
-            </p>
+    </form>
 
-            <fieldset>
-
-                <legend>Category</legend>
-
-                <p>
-                    <input type="radio" id="food" name="category" value="food">
-                    <label for="food">Food</label>
-                </p>
-
-                <p>
-                    <input type="radio" id="study" name="category" value="study">
-                    <label for="study">Study Spot</label>
-                </p>
-
-                <p>
-                    <input type="radio" id="outdoors" name="category" value="outdoors">
-                    <label for="outdoors">Outdoors</label>
-                </p>
-
-            </fieldset>
-
-            <fieldset>
-
-                <legend>What's good about it?</legend>
-
-                <p>
-                    <input type="checkbox" id="affordable" name="good-points" value="affordable">
-                    <label for="affordable">Affordable</label>
-                </p>
-
-                <p>
-                    <input type="checkbox" id="wifi" name="good-points" value="wifi">
-                    <label for="wifi">Good Wi-Fi</label>
-                </p>
-
-                <p>
-                    <input type="checkbox" id="quiet" name="good-points" value="quiet">
-                    <label for="quiet">Quiet</label>
-                </p>
-
-            </fieldset>
-
-            <p>
-                <label for="email">Contact Email</label><br>
-                <input type="email" id="email" name="email" required>
-            </p>
-
-            <p>
-                <button type="submit">Suggest place</button>
-            </p>
-
-        </form>
-
-    </main>
-
-    <footer>
-
-        <p>&copy; 2026 TUPian CoffeeBuddy Guide. All rights reserved.</p>
-
-    </footer>
-
-</body>
-</html>
+</main>
