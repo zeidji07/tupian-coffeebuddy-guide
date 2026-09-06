@@ -32,7 +32,7 @@ img{
 }
 
 /* =========================
-   3. LAYOUT
+   3. LAYOUT REGIONS
 ========================= */
 
 header{
@@ -124,15 +124,16 @@ section h2{
 ========================= */
 
 fieldset{
-    padding:20px;
-    border-radius:10px;
-    border:1px solid var(--grey);
     background:white;
+    border:1px solid var(--grey);
+    border-radius:10px;
+    padding:20px;
 }
 
 legend{
     color:var(--brand);
     font-weight:bold;
+    padding:0 8px;
 }
 
 input,
@@ -142,6 +143,7 @@ textarea{
     padding:10px;
     margin-top:5px;
     margin-bottom:15px;
+    box-sizing:border-box;
 }
 
 button{
