@@ -1,0 +1,166 @@
+/* =========================
+   1. VARIABLES
+========================= */
+
+:root{
+    --brand:#8a5f41;
+    --dark:#2f241f;
+    --grey:#777777;
+    --light:#f8f3ee;
+}
+
+/* =========================
+   2. BASE STYLES
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    color:var(--dark);
+    background:var(--light);
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    border-radius:8px;
+}
+
+/* =========================
+   3. LAYOUT
+========================= */
+
+header{
+    background:var(--brand);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:var(--dark);
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav li{
+    display:inline-block;
+}
+
+nav a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+nav a:hover{
+    background:#6f4d36;
+}
+
+main{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* =========================
+   4. PLACE CARDS
+========================= */
+
+.place-card{
+    background:white;
+    border-left:8px solid var(--brand);
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.place-card h3{
+    color:var(--brand);
+    font-size:1.5rem;
+}
+
+.place-card ul{
+    list-style:none;
+    padding:0;
+}
+
+.place-card a{
+    color:var(--brand);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.place-card a:hover{
+    text-decoration:underline;
+}
+
+section h2{
+    color:var(--brand);
+    text-align:center;
+}
+
+/* =========================
+   5. CONTACT FORM
+========================= */
+
+fieldset{
+    padding:20px;
+    border-radius:10px;
+    border:1px solid var(--grey);
+    background:white;
+}
+
+legend{
+    color:var(--brand);
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+button{
+    background:var(--brand);
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#6f4d36;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline:3px solid var(--brand);
+    outline-offset:2px;
+}
