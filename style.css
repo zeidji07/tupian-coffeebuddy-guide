@@ -86,12 +86,18 @@ footer{
    4. PLACE CARDS
 ========================= */
 
+.product-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+}
+
 .place-card{
     background:white;
     border-left:8px solid var(--brand);
     border-radius:10px;
     padding:20px;
-    margin-bottom:20px;
+    flex:1 1 240px;
 }
 
 .place-card h3{
